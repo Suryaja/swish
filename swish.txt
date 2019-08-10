@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+      int x,p,temp;
+      Scanner s = new Scanner(System.in);
+      p = s.nextInt();
+      x = s.nextInt();
+      int ans = p;
+      while(true)
+      {
+          temp = (p*x)/100;
+          if(temp==0)
+          {
+              break;
+          }
+          p-=temp;
+          ans+=p;
+      }
+    System.out.println(ans);
+    }
+}
